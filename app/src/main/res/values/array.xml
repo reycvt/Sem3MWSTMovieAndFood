@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genre">
+        <item>Horror</item>
+        <item>Fantasy</item>
+        <item>Harem</item>
+        <item>Romance</item>
+        <item>Comedy</item>
+    </string-array>
+
+    <string-array name="taste">
+        <item>Pedas</item>
+        <item>Manis</item>
+        <item>Pedas Special</item>
+        <item>normal</item>
+    </string-array>
+
+    <string-array name="StatusBioskop">
+        <item>Up To Date</item>
+        <item>Closed</item>
+    </string-array>
+</resources>

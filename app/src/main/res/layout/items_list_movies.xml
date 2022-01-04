@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title = "/>
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/imgmovie"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"                >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genre = ">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tvgenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="genre">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Durasi = ">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/tvDurasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="menit">
+
+                </TextView>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Release = ">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tvtanggalmovies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tanggal">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/btndelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:backgroundTint="@color/red"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
