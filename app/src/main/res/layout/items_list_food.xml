@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:cardCornerRadius="13dp"
+    android:layout_margin="10dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
         android:orientation="vertical"
+        android:padding="10dp"
         tools:ignore="MissingConstraints">
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,13 +27,15 @@
                 android:id="@+id/tvTitleMakanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title"/>
+                android:text="makanan"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp">
+            android:gravity="center_vertical"
+            android:background="@color/m_abu"
+            android:padding="10dp">
 
 
             <ImageView
@@ -57,7 +64,7 @@
                         android:id="@+id/tvrasa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="genre">
+                        android:text="gurih">
 
                     </TextView>
                 </LinearLayout>
@@ -75,7 +82,7 @@
                         android:id="@+id/tvTersedia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="menit">
+                        android:text="12">
 
                     </TextView>
                 </LinearLayout>
@@ -93,7 +100,7 @@
                         android:id="@+id/tvHargaMakanan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hara=ga">
+                        android:text="Harga">
 
                     </TextView>
                 </LinearLayout>
@@ -103,21 +110,29 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+            <ImageButton
                 android:id="@+id/btnupdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Update"
-                android:layout_marginRight="5dp"/>
-            <Button
+                android:src="@drawable/ic_edit_white"
+                android:background="@color/m_abut"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"/>
+            <ImageButton
                 android:id="@+id/btndelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Delete"
-                android:backgroundTint="@color/red"/>
+                android:src="@drawable/ic_delete_white"
+                android:background="@color/red"
+                android:padding="5dp"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

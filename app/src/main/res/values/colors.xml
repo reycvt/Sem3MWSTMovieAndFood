@@ -9,4 +9,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#F3008A06</color>
+    
+    <color name="m_abu">#F5F5F5</color>
+    <color name="m_merah">#F05454</color>
+    <color name="m_abut">#30475E</color>
+    <color name="m_itam">#121212</color>
 </resources>

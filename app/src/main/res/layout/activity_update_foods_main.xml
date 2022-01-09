@@ -12,79 +12,92 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="15dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:background="@color/m_abut">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="Update Data Makanan "
+            android:text="Update Data Makanan"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
     </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Masukin Nama Makananan"/>
-
-    <EditText
-        android:id="@+id/ENamaMakanan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Title"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tentukan Rasa"
-        />
-    <Spinner
-        android:id="@+id/sp_prodi"
-        android:layout_width="211dp"
-        android:layout_height="27dp"
-        android:entries="@array/taste"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="353dp"
-        android:layout_marginBottom="30dp"
-        ></Spinner>
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Harga"
-        />
-
-    <EditText
-        android:id="@+id/EDurasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Rp"
-        android:inputType="textPersonName" />
-
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center">
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/m_abu">
 
-        <Button
-            android:id="@+id/btnsubmitUpMkn"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit Data"
+            android:text="Masukin Nama Makananan"/>
+
+        <EditText
+            android:id="@+id/ENamaMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nama Makanan"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentukan Rasa"
+            />
+        <Spinner
+            android:id="@+id/sp_prodi"
+            android:layout_width="211dp"
+            android:layout_height="27dp"
+            android:entries="@array/taste"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="353dp"
+            android:layout_marginBottom="10dp"
+            ></Spinner>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga"
             />
 
+        <EditText
+            android:id="@+id/EDurasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Rp"
+            android:inputType="textPersonName" />
 
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnsubmitUpMkn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:drawableLeft="@drawable/ic_save"
+                />
+
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
