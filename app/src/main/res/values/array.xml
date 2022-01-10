@@ -8,11 +8,9 @@
         <item>Comedy</item>
     </string-array>
 
-    <string-array name="taste">
-        <item>Pedas</item>
-        <item>Manis</item>
-        <item>Pedas Special</item>
-        <item>normal</item>
+    <string-array name="StatusMakanan">
+        <item>Masih Ada</item>
+        <item>Habis</item>
     </string-array>
 
     <string-array name="StatusBioskop">

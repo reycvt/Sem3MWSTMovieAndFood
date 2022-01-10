@@ -12,13 +12,15 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="15dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:background="@color/m_abut">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:text="Tambah Data Movies "
+            android:textColor="@color/white"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="20sp" />
@@ -43,7 +45,7 @@
         android:text="Tentukan Genre"
         />
     <Spinner
-        android:id="@+id/sp_prodi"
+        android:id="@+id/sp_Genre"
         android:layout_width="211dp"
         android:layout_height="27dp"
         android:entries="@array/genre"
@@ -66,18 +68,25 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="60/90/120 menit"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_marginBottom="20dp"
+        />
 
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
         android:text="Tanggal Rilis"
         />
-
-        TODO(tambahkan input kalender)
+    <EditText
+        android:id="@+id/inptTanggalMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Tanggal"
+        android:focusable="false"
+        android:layout_marginBottom="32dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -90,8 +99,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit Data"
+            android:backgroundTint="@color/green"
             />
-
 
     </LinearLayout>
 

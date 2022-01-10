@@ -10,14 +10,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/btnAdd"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Tambah Lokasi Bioskop"
-            android:backgroundTint="@color/green"
-            />
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btnAddBioskop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tambah Bioskop"
+                android:backgroundTint="@color/green"
+                />
+            <Button
+                android:id="@+id/btnBackMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Menu Utama"
+                android:backgroundTint="@color/green"
+                />
+        </LinearLayout>
 
 <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
 <!--            android:layout_width="match_parent"-->
@@ -34,13 +48,20 @@
 <!--                app:layout_constraintTop_toTopOf="parent" />-->
 <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvBioskop"
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            tools:listitem="@layout/items_list_bioskop"/>
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBioskop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                tools:listitem="@layout/items_list_bioskop"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 
     </LinearLayout>

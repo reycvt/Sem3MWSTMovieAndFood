@@ -11,7 +11,7 @@ data class GetBioskop(
 	val error: Boolean,
 
 	@field:SerializedName("message")
-	val message: Message,
+	val message: String
 )
 
 data class DataItem(
@@ -28,9 +28,3 @@ data class DataItem(
 	@field:SerializedName("alamat")
 	val alamat: String
 )
-
-//data class Message(
-//
-//	@field:SerializedName("success")
-//	val success: String
-//)

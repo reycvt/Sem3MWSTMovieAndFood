@@ -40,7 +40,7 @@
             android:text="Masukin Nama Bioskop"/>
 
         <EditText
-            android:id="@+id/ENamaMakanan"
+            android:id="@+id/ENamaBioskop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -55,7 +55,7 @@
             android:text="Tentukan Status"
             />
         <Spinner
-            android:id="@+id/sp_prodi"
+            android:id="@+id/sp_Status"
             android:layout_width="211dp"
             android:layout_height="27dp"
             android:entries="@array/StatusBioskop"
@@ -73,12 +73,27 @@
             />
 
         <EditText
-            android:id="@+id/EDurasi"
+            android:id="@+id/EAlamatBioskop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Alamat"
             android:inputType="textPersonName" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode = "/>
+            <TextView
+                android:id="@+id/TvIdUBioskop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,11 +102,12 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btnsubmitAddMkn"
+                android:id="@+id/btnsubmitUpBioskop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
-                android:drawableLeft="@drawable/ic_save"/>
+                android:drawableLeft="@drawable/ic_save"
+                android:backgroundTint="@color/green"/>
         </LinearLayout>
     </LinearLayout>
 

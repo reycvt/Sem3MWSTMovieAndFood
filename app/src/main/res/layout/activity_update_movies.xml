@@ -44,8 +44,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Title"
-            android:inputType="textPersonName"
-            android:layout_marginBottom="10dp"/>
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView3"
@@ -54,13 +53,13 @@
             android:text="Tentukan Genre"
             />
         <Spinner
-            android:id="@+id/sp_prodi"
+            android:id="@+id/sp_Genre"
             android:layout_width="211dp"
             android:layout_height="27dp"
             android:entries="@array/genre"
             tools:layout_editor_absoluteX="48dp"
             tools:layout_editor_absoluteY="353dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="30dp"
             ></Spinner>
 
 
@@ -78,7 +77,8 @@
             android:ems="10"
             android:hint="60/90/120 menit"
             android:inputType="textPersonName"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="20dp"
+            />
 
 
         <TextView
@@ -87,8 +87,29 @@
             android:layout_height="wrap_content"
             android:text="Tanggal Rilis"
             />
+        <EditText
+            android:id="@+id/inptTanggalMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Tanggal"
+            android:focusable="false"
 
-        TODO(tambahkan input kalender dan input gambar)
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kode = "/>
+            <TextView
+                android:id="@+id/TvIdUMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,11 +118,12 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btnsubmit"
+                android:id="@+id/btnsubmitUMovies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
                 android:drawableLeft="@drawable/ic_save"
+                android:backgroundTint="@color/green"
                 />
 
         </LinearLayout>
